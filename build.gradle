@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.6.7'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.7'
+    implementation 'junit:junit:4.13.2'
+    implementation 'org.reactivestreams:reactive-streams:1.0.3'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.thoughtworks.xstream:xstream:1.4.19'
+    implementation 'org.json:json:20171018'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.7'
+    testImplementation 'org.springframework.security:spring-security-test:5.6.3'
+}
+
+test {
+    useJUnitPlatform()
+}
